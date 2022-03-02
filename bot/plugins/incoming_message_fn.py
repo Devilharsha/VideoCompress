@@ -64,7 +64,7 @@ async def incoming_start_message_f(bot, update):
             user = await client.get_chat_member(UPDATES_CHANNEL, message.chat.id)
             if user.status == "kicked":
                 await message.reply_text(
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/SENKUCHAT).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -95,10 +95,10 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Updates Channel', url='https://t.me/Discovery_Updates')
+                    InlineKeyboardButton('Updates Channel', url='https://t.me/SENKUBOTS')
                 ],
                 [
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                    InlineKeyboardButton('Support Group', url='https://t.me/SENKUCHAT')
                 ]
             ]
         ),
@@ -116,7 +116,7 @@ async def incoming_compress_message_f(bot, update):
             if user.status == "kicked":
                 await bot.send_message(
                     chat_id=update.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/SENKUCHAT).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
